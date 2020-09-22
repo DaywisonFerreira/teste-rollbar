@@ -5,11 +5,11 @@ const rollbar = new Rollbar('e7ac80802aec438aa6fe09bf4e6ec6b0');
 const app = express();
 
 app.get('/', function(req, res) {
-  const foo = {
-    hello: "world"
+  const teste = {
+    teste1: "dadasd"
   }
 
-  console.log(foo.bar())
+  console.log(teste.bar())
 });
 
 app.use(rollbar.errorHandler());
